@@ -30,7 +30,7 @@
 
 | 🔪 高级多边形手术刀 | 📊 赛博数据罗盘与导出 |
 |:---:|:---:|
-|https://github.com/user-attachments/assets/e3cc1405-d59f-45c1-8177-a80a22851fb7|https://github.com/user-attachments/assets/8410e085-4cb2-4aaf-8327-e9d3a235eab4|
+|https://github.com/user-attachments/assets/e3cc1405-d59f-45c1-8177-a80a22851fb7|https://github.com/user-attachments/assets/ad032c1f-dccb-4588-9d53-96c338983f71|
 | *基于解析几何的双击加点与右击删点，像 Photoshop 钢笔工具一样自由修补。* | *实时红黄绿诊断当前数据集健康度，并一键完成 train/val 划分与打包。* |
 
 ---
