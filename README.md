@@ -25,12 +25,12 @@
 
 | 🌟 效果总览：AI 自动标注成品 | 🤖 零样本全图秒扫 |
 |:---:|:---:|
-| <video src="https://raw.githubusercontent.com/katiacoco/SmartLabeler/main/docs/1.mp4" controls="controls" width="100%" muted></video> | <video src="https://raw.githubusercontent.com/katiacoco/SmartLabeler/main/docs/2.mp4" controls="controls" width="100%" muted></video> |
+| https://github.com/user-attachments/assets/27528b5f-1953-409a-99cc-4b775d51b092 |https://github.com/user-attachments/assets/d2f81c9f-d8ac-47ad-8377-34c906efcf16|
 | *海量图片后台全自动完成高精度像素级抠图与 BBox 定位。* | *YOLO 引导 SAM 实现像素级精准抠图，1秒内完成全图目标的轮廓提取。* |
 
 | 🔪 高级多边形手术刀 | 📊 赛博数据罗盘与导出 |
 |:---:|:---:|
-| <video src="https://raw.githubusercontent.com/katiacoco/SmartLabeler/main/docs/3.mp4" controls="controls" width="100%" muted></video> | <video src="https://raw.githubusercontent.com/katiacoco/SmartLabeler/main/docs/4.mp4" controls="controls" width="100%" muted></video> |
+|https://github.com/user-attachments/assets/e3cc1405-d59f-45c1-8177-a80a22851fb7|https://github.com/user-attachments/assets/8410e085-4cb2-4aaf-8327-e9d3a235eab4|
 | *基于解析几何的双击加点与右击删点，像 Photoshop 钢笔工具一样自由修补。* | *实时红黄绿诊断当前数据集健康度，并一键完成 train/val 划分与打包。* |
 
 ---
