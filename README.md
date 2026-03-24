@@ -1,4 +1,4 @@
-# 🚀 SmartLabeler: AI 智能图像标注平台
+# 🚀 SmartLabeler: 工业级 AI 智能图像标注平台
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/GUI-PyQt6-green.svg)](https://www.qt.io/)
@@ -13,7 +13,7 @@
 </p>
 
 ## 📑 软件简介
-**SmartLabeler** 是一款融合了 **YOLOv8**（目标检测）与 **Mobile-SAM**（像素级分割）双大模型的图像标注 SaaS 平台。本软件专为高效、精准的计算机视觉数据集制作而生，支持零样本自动标注、多格式批量导出及 YOLO 标准训练包一键构建。
+**SmartLabeler** 是一款融合了 **YOLOv8**（目标检测）与 **Mobile-SAM**（像素级分割）双大模型的工业级图像标注 SaaS 平台。本软件专为高效、精准的计算机视觉数据集制作而生，支持零样本自动标注、多格式批量导出及 YOLO 标准训练包一键构建。
 
 通过建立**单例守护线程架构**与**跨语言内存隔离协议**，本平台实现了零延迟的极客交互体验，彻底告别传统软件拉框描边的低效与卡顿。
 
@@ -25,12 +25,12 @@
 
 | 🌟 效果总览：AI 自动标注成品 | 🤖 零样本全图秒扫 |
 |:---:|:---:|
-| <video src="docs/1.mp4" controls="controls" width="100%" muted></video> | <video src="docs/2.mp4" controls="controls" width="100%" muted></video> |
+| <video src="https://raw.githubusercontent.com/katiacoco/SmartLabeler/main/docs/1.mp4" controls="controls" width="100%" muted></video> | <video src="https://raw.githubusercontent.com/katiacoco/SmartLabeler/main/docs/2.mp4" controls="controls" width="100%" muted></video> |
 | *海量图片后台全自动完成高精度像素级抠图与 BBox 定位。* | *YOLO 引导 SAM 实现像素级精准抠图，1秒内完成全图目标的轮廓提取。* |
 
 | 🔪 高级多边形手术刀 | 📊 赛博数据罗盘与导出 |
 |:---:|:---:|
-| <video src="docs/3.mp4" controls="controls" width="100%" muted></video> | <video src="docs/4.mp4" controls="controls" width="100%" muted></video> |
+| <video src="https://raw.githubusercontent.com/katiacoco/SmartLabeler/main/docs/3.mp4" controls="controls" width="100%" muted></video> | <video src="https://raw.githubusercontent.com/katiacoco/SmartLabeler/main/docs/4.mp4" controls="controls" width="100%" muted></video> |
 | *基于解析几何的双击加点与右击删点，像 Photoshop 钢笔工具一样自由修补。* | *实时红黄绿诊断当前数据集健康度，并一键完成 train/val 划分与打包。* |
 
 ---
@@ -84,7 +84,7 @@
 
 ---
 
-## 🧠 底层架构与算法深度 
+## 🧠 底层架构与算法深度
 
 * **永生单例线程架构 (Immortal Worker)**：为彻底镇住 PyTorch/OpenMP 的底层算力，废除传统多线程频繁创建销毁机制，设计后台常驻死循环引擎。UI 仅通过 `QMutex` 与 `QWaitCondition` 派发坐标任务，实现 AI 满载运算而 GUI 永远保持 60 帧丝滑不卡顿。
 * **跨语言内存隔离盾 (Memory Isolation)**：针对多线程下 C++ 底层连续内存易被 Python GC 回收导致 `0xC0000409` 堆栈溢出崩溃的致命难题，在输出层强制执行 `.copy().tolist()` 内存深度克隆协议，彻底斩断野指针隐患。
@@ -109,5 +109,3 @@ pip install -r requirements.txt
 
 # 3. 启动平台
 python main.py
-
-*(注：核心预训练权重 `yolov8n.pt` 与 `mobile_sam.pt` 已内置于本仓库，无需配置额外网络环境，真正做到开箱即用。建议配备 NVIDIA GPU 以获得极速推理体验。)*
